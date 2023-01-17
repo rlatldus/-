@@ -1,0 +1,98 @@
+/* * {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+nav {
+  margin: 20px;
+}
+ul {
+  padding: 0;
+  padding: none;이란 말은 없는 듯
+  list-style: none;
+}
+.a {
+  padding: 15px;
+  background-color: antiquewhite;
+  display: none;
+}
+.b {
+  padding: 15px;
+  background-color: rgb(243, 250, 215);
+}
+.c {
+  padding: 15px;
+  background-color: rgb(224, 215, 250);
+}
+.box {
+  border-radius: 7px;
+  margin: 10px;
+  position: absolute;
+}
+span {
+  font-weight: bolder;
+}
+.img {
+  position: absolute;
+  right: 10px;
+} */
+/* #button {
+  box-shadow: none;
+  outline: none;
+  border-radius: 7px;
+  margin: 0 10px;
+  border-color: rgb(254, 184, 137);
+  border-width: 4px;
+  background-color: brown;
+  color: rgb(255, 255, 255);
+  height: 40px;
+  width: 70px;
+} */
+
+section {
+  margin: 10px;
+}
+
+.alart {
+  /* text-align: center; */
+  padding-left: 10px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  /* height: 50px; */
+  line-height: 50px;
+  margin: 10px 0;
+}
+#alart,
+#alart1,
+#alart2 {
+  display: none;
+}
+button,
+input {
+  background-color: antiquewhite;
+  border-color: aqua;
+  width: 100px;
+  border-radius: 10px;
+  margin: 5px;
+}
+button:hover,
+input:hover {
+  background-color: rgb(197, 168, 131);
+  transition: background-color 2s;
+}
+/* .a {
+  width: 500px;
+  position: relative;
+} */
+/* div.b,
+div.c {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+} */
+/* button:hover,
+.alart {
+  display: block;
+} */

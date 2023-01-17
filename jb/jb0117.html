@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jb0117.css" />
+    <title>버튼 공략</title>
+  </head>
+  <body>
+    <header id="header">
+      <div id="box">
+        <p class="hi" id="hi">안녕하세요</p>
+        <div class="r"></div>
+        <button class="close" id="close" onclick="a('none');">닫기</button>
+      </div>
+    </header>
+    <button id="open">버튼1</button>
+    <button onclick="a('block','메메롱');">버튼2</button>
+  </body>
+
+  <script>
+    document.getElementById('open').addEventListener('click', function () {
+      document.getElementsByClassName('hi')[0].innerHTML = 메메롱;
+    });
+    addEventListener;
+
+    function a(aa, bb) {
+      document.getElementById('header').style.display = aa;
+      document.getElementsByClassName('hi')[0].innerHTML = bb;
+    }
+  </script>
+</html>
+<!-- 함수는 div가 아닌header로 -->

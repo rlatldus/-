@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'SaenggeoJincheon';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/SaenggeoJincheon.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* p.a {
+  font-family: 'SaenggeoJincheon';
+} */
+section {
+  border: 1px solid black;
+
+  /* border: 1px; */
+  /* border-style: solid;
+  border-color: black; */
+}
+header {
+  font-family: 'SaenggeoJincheon';
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+div.flex {
+  display: flex;
+}
+div.content {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+.Sidebar {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  min-width: 25%;
+}
+p.b {
+  font-family: 'SaenggeoJincheon';
+}
+p.d {
+  font-family: 'SaenggeoJincheon';
+}
+div.copy {
+  padding: 35px 10px;
+  border: 1px solid black;
+  margin: 10px;
+  font-family: 'SaenggeoJincheon';
+}
+@media screen and (max-width: 400px) {
+  div.flex {
+    flex-grow: inherit;
+  }
+}
+/* inline>internal>external순으로 우선 둠 */

@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'myFont';
+  src: url('myFont.woff2');
+}
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 3px black;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 16px;
+}
+/* .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 16px;
+} */
+/* .left { */
+/* height: 40px; */
+/* line-height: 40px; */
+/* display: flex; */
+/* } */
+.left-1 {
+  background-color: rgba(240, 248, 255, 0);
+  height: 40px;
+  border: 0px;
+  font-size: 1.5rem;
+}
+.left-2 {
+  height: 40px;
+  font-size: 1.2rem;
+  margin-left: 6px;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  max-width: 100%;
+}
+.form-1 {
+  width: calc(100% - 60px);
+  height: 40px;
+  padding: 0 6px;
+  border: 1px solid rgb(103, 103, 103);
+  border-radius: 2px 0px 0px 2px;
+  border-right: none;
+}
+.form-2 {
+  /* 와.. border순서도 중요함 */
+
+  width: 60px;
+  border-radius: 0px 2px 2px 0px;
+  border: 1px solid rgb(103, 103, 103);
+  border-left: none;
+}
+.last {
+  display: flex;
+}
+.last-1 {
+  display: none;
+  height: 40px;
+  border: 0;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+.last-2 {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(221, 221, 220);
+  border-radius: 50%;
+  background-color: antiquewhite;
+  background-image: url(../images/favicon.ico);
+  background-size: 40px;
+  /* padding-left: 16px; */
+}
+@media screen and (max-width: 800px) {
+  .left-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    display: none;
+  }
+  .last-1 {
+    display: block;
+  }
+}

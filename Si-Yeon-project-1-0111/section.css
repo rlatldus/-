@@ -1,0 +1,9 @@
+section {
+  width: (culc 100% - 200px);
+  top: 0;
+}
+
+.c {
+  width: 1500px;
+  height: 1500px;
+}

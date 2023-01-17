@@ -1,0 +1,40 @@
+header {
+  position: relative;
+  background-color: antiquewhite;
+  height: 55px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px 0;
+  display: none;
+}
+
+/* display: flex; 는 바로 부모 테그에 적용됨 */
+#box {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+}
+/* display:.inline-block은 flex와 반대로 세로 정렬 */
+.r {
+  padding: 10px;
+}
+.close {
+  /* align-content: center; */
+  /* padding: 0; */
+  /* justify-self: center;
+  justify-items: center;
+  justify-content: space-around; */
+  /* padding: 100px 0; */
+}
+/* 버튼 사이즈 줄이는 법은 id가 아닌 네임으로 */
+button {
+  margin: 16px 0;
+  background-color: rgb(247, 214, 172);
+  border-color: rgb(191, 148, 91);
+  border-radius: 20px;
+  height: 30px;
+}
+p {
+  margin: 18px 0;
+}
