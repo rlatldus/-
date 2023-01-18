@@ -1,0 +1,7 @@
+.list-group {
+  display: none;
+}
+
+.open {
+  display: block;
+}

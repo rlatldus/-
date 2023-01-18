@@ -16,12 +16,12 @@
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <span class="navbar-brand">Navbar</span>
-        <button class="navbar-toggler" type="button">
+        <button class="navbar-toggler" type="button" onclick="d()">
           <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
 
-    <ul class="list-group">
+    <ul class="list-group" id="list-group">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
       <li class="list-group-item">A third item</li>
@@ -33,31 +33,15 @@
 
     <button type="button" class="btn btn-secondary">버튼</button>
     <button type="button" class="btn btn-secondary">버튼</button>
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script>
-    document.getElementsByClassName('navbar-toggler')[0].addEventListener('click',function (){
-    document.getElementsByClassName('list-group')[0].classList.toggle('open');
-    })
-    
-  
-    //  jQuery 조작법
-      // $는 document on은 addEventListener
-    // document.querySelector('navbar-toggler')[0]
-
-  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    >
+      function d(){
+        document.getElementById('list-group')[0].style.display = 'block';
+        } 
   </script>
-  <p class="c">안녕</p>
-  <button id="hi">버튼</button>
-  <script>
-    $('.c').html('shsh');
-    $('.c').css('color','red');
-    document.querySelector('#hi').addEventListener()
-    $('#hi').on('click',function(){})
-  </script>
-
   </body>
 </html>
-<!-- #이랑 .이랑;이거 자꾸 빼먹네요 -->
-<!-- [0]. 중요 -->
 <!-- 이거는 스킵,,, 나중에 질문 -->
