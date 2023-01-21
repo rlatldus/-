@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Simple Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header{
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        padding: 30px 20px;
+        display: inline-block;
+        box-shadow: 0px 5px 5px rgba(160, 160, 160, 0.628);
+      }
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #58666e;
+        background-color: #f0f3f4;
+      }
+      .logo{
+        margin: 20px;
+      }
+      nav{
+        float: right;
+        margin: auto;
+        display: inline-block;
+
+      }
+      nav>ul{
+        float: right;
+      }
+      nav>ul>li {
+        list-style: none;
+        float: left;
+        margin: 10px 30px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:link{
+        color: #bec0c1;
+      }
+      a:hover{
+        color:#58666e;
+      }
+      #content-wrap:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+      aside{
+        position: fixed;
+        width: 200px;
+        height: 200vh;
+        background-color: rgb(52, 52, 52);
+        color: white;
+        z-index: -1;
+        float: left;
+      }
+      h1{
+        padding: 30px 15px;
+      }
+      aside>ul>li{
+        list-style: none;
+        padding: 15px;
+      }
+      aside>ul>li:nth-of-type(n+2):hover{
+        background-color: #58666e;
+      }
+      .green{
+        background-color: aquamarine;
+      }
+      article{
+        float: right;
+        width: calc(100vw - 230px);
+        background-color: white;
+        padding:30px 20px;
+        margin: 5px auto;
+      }
+      footer{
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        padding: 0 25px;
+        line-height: 60px;
+        color: #8a8c8f;
+        border-top: 1px solid #dee5e7;
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <a class="logo" href="#home">
+          <img src="https://poiemaweb.com/img/logo.png" height="36px" />
+        </a>
+        <nav>
+          <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div id="content-wrap">
+      <aside>
+        <ul>
+          <h1 >Aside</h1>
+          <li class="green">London</li>
+          <li>Paris</li>
+          <li>Tokyo</li>
+          <li>Newyork</li>
+        </ul>
+      </aside>
+      <section>
+        <article>
+          <h2>London</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ex neque est maiores perferendis magnam ipsa excepturi officia, rerum aut sunt aspernatur quae. Debitis, ut neque minima suscipit velit totam.
+            Numquam cumque in aut voluptas vitae excepturi totam assumenda explicabo. Assumenda porro inventore fugiat voluptatum, tempora dolor. Quia error ducimus placeat, illum eveniet, nesciunt excepturi velit perspiciatis praesentium esse explicabo.
+            Itaque omnis dicta optio nulla nisi sunt id sequi iste eligendi doloremque deserunt possimus at adipisci vitae dolore recusandae, placeat incidunt tenetur eum error animi consectetur repudiandae reprehenderit. Tempora, ipsa!
+          </p>
+        </article>
+        <article>
+          <h2>London</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ex neque est maiores perferendis magnam ipsa excepturi officia, rerum aut sunt aspernatur quae. Debitis, ut neque minima suscipit velit totam.
+            Numquam cumque in aut voluptas vitae excepturi totam assumenda explicabo. Assumenda porro inventore fugiat voluptatum, tempora dolor. Quia error ducimus placeat, illum eveniet, nesciunt excepturi velit perspiciatis praesentium esse explicabo.
+            Itaque omnis dicta optio nulla nisi sunt id sequi iste eligendi doloremque deserunt possimus at adipisci vitae dolore recusandae, placeat incidunt tenetur eum error animi consectetur repudiandae reprehenderit. Tempora, ipsa!
+          </p>
+        </article>
+        <article>
+          <h2>London</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ex neque est maiores perferendis magnam ipsa excepturi officia, rerum aut sunt aspernatur quae. Debitis, ut neque minima suscipit velit totam.
+            Numquam cumque in aut voluptas vitae excepturi totam assumenda explicabo. Assumenda porro inventore fugiat voluptatum, tempora dolor. Quia error ducimus placeat, illum eveniet, nesciunt excepturi velit perspiciatis praesentium esse explicabo.
+            Itaque omnis dicta optio nulla nisi sunt id sequi iste eligendi doloremque deserunt possimus at adipisci vitae dolore recusandae, placeat incidunt tenetur eum error animi consectetur repudiandae reprehenderit. Tempora, ipsa!
+          </p>
+        </article>
+      </section>
+    </div>
+    <footer>Lorem ie voluptatum d, a nemo perspiciatis ea dolores maiores quia porro impedit. Culpa.</footer>
+  </div>
+  </body>
+</html>

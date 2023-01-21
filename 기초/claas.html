@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a {
+        background-color: rgb(230, 70, 150);
+      }
+      .box {
+        background-color: antiquewhite;
+      }
+      .child {
+        background-color: rgb(151, 109, 242);
+      }
+      .original {
+        background-color: rgb(164, 135, 96);
+      }
+      div {
+        background-color: rgb(104, 185, 80);
+        width: 100px;
+        height: 100px;
+      }
+
+      /* 요소가 밑에 있을 수록 그리고 자식일 수록  */
+    </style>
+  </head>
+  <body>
+    <div class="original box">
+      <div class="child box a">translate</div>
+    </div>
+    <div class="original box">
+      <div class="child box a">translate</div>
+    </div>
+    <div class="original box">
+      <div class="child box a">translate</div>
+    </div>
+  </body>
+</html>

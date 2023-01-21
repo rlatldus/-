@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        animation: changeWidth 3s infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+
+        /* transition: opacity 4s; */
+        /* transition-delay: 0.5s; */
+      }
+      button {
+        width: 100px;
+      }
+      @keyframes changeWidth {
+        0% {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+        50% {
+          width: 300px;
+          background-color: blue;
+          opacity: 20%;
+        }
+        100% {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+      }
+
+      /* background-color: blue;
+        opacity: 20%; */
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <button class="play">start</button>
+    <button class="stop">stop</button>
+  </body>
+  <script>
+    <script>
+      function () {
+        document.querySelector('.play').addEventListener('click',function () {
+          // [재생] 버튼을 클릭하면 -webkit-animation-play-state: running 속성 적용
+          document.querySelector('div').addEventListener('animation-play-state', 'running');
+        });
+        $('.stop').click(function () {
+          // [멈춤] 버튼을 클릭하면 -webkit-animation-play-state: paused 속성 적용
+          $('div').css('animation-play-state', 'paused');
+        });
+      };
+  </script>
+</html>
+
+모르게씀
