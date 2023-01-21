@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    div {
+      border: 5px solid blueviolet;
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
   <body>
     <a a href="#">홈</a>
 
     <form>
-      <h2>연락처</h2>
+      <h2 tabindex="0">연락처</h2>
       <p>
         <label>
           <span> 이름 </span>
@@ -26,5 +33,54 @@
         ssssssdsg sdgsg
       </p>
     </form>
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+      voluptatum? Sint quam error saepe, molestiae harum, rerum, quas vel iure
+      eligendi veritatis nisi esse. Illo velit iste nihil! Magnam, accusamus.
+    </div>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          /* Selects the second element of div siblings */
+          div:nth-of-type(2) {
+            background: red;
+          }
+
+          /* Selects the second li element in a list */
+          li:nth-of-type(2) {
+            background: lightgreen;
+          }
+
+          /* Selects every third element among any group of siblings */
+          :nth-of-type(3) {
+            background: yellow;
+          }
+        </style>
+      </head>
+      <body>
+        <div>
+          <p>This is some text.</p>
+        </div>
+
+        <div>
+          <p>This is some text.</p>
+        </div>
+
+        <div>
+          <p>This is some text.</p>
+        </div>
+
+        <ul>
+          <li>First list item</li>
+          <li>Second list item</li>
+          <li>Third list item</li>
+          <li>Fourth list item</li>
+          <li>Fifth list item</li>
+        </ul>
+      </body>
+    </html>
   </body>
 </html>
+<!-- tabindex="0" -->
+<!-- :nth-of-type(3)  -->

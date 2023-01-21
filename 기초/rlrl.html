@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      border: 2px solid black;
+    }
+    .item {
+      border-radius: 10px;
+      font-size: 20px;
+      height: 50px;
+      margin: 10px;
+    }
+    .float {
+      width: 50px;
+      background-color: rgb(77, 77, 251);
+      float: left;
+    }
+
+    .four {
+      width: 90px;
+      background-color: orange;
+      clear: both;
+    }
+    .a {
+      width: 100px;
+      height: 100px;
+      background-color: antiquewhite;
+      position: relative;
+    }
+    .b {
+      background-color: aqua;
+      position: relative;
+      left: 30px;
+      top: 30px;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="clearfix">
+        <div class="item float">1</div>
+        <div class="item float">2</div>
+        <div class="item float">3</div>
+      </div>
+      <div class="item four">4</div>
+    </div>
+  </body>
+</html>
