@@ -13,7 +13,7 @@
         background-color: white;
         width: 100%;
         padding: 30px 20px;
-        display: inline-block;
+        /* display: inline-block; */
         box-shadow: 0px 5px 5px rgba(160, 160, 160, 0.628);
       }
       body {
@@ -22,21 +22,25 @@
         background-color: #f0f3f4;
       }
       .logo{
-        margin: 20px;
+        padding: 20px; 
+        width:90px;
       }
       nav{
-        float: right;
-        margin: auto;
-        display: inline-block;
-
+        /* margin: auto; */
+        /* display: inline-block; */
+        
       }
       nav>ul{
-        float: right;
+        display: flex;
+        /* background-color: #919da1; */
+        width: 50vw;
+        justify-content: space-between;
       }
       nav>ul>li {
         list-style: none;
         float: left;
-        margin: 10px 30px;
+        padding: 10px 10px;
+
       }
       a {
         text-decoration: none;
@@ -61,6 +65,7 @@
         color: white;
         z-index: -1;
         float: left;
+        top: 110px;
       }
       h1{
         padding: 30px 15px;
@@ -75,12 +80,16 @@
       .green{
         background-color: aquamarine;
       }
+      section{
+        padding-top: 120px;
+      }
       article{
         float: right;
         width: calc(100vw - 230px);
         background-color: white;
         padding:30px 20px;
         margin: 5px auto;
+
       }
       footer{
         position: absolute;
@@ -92,13 +101,43 @@
         border-top: 1px solid #dee5e7;
         background-color: #f2f2f2;
       }
+
+      @media screen and ( min-width:800px){
+        nav{ float:right;}
+      }
+      @media screen and ( max-width:800px){
+        /* header{text-align: center;} */
+        /* .logo{text-align: center;} */
+        /* nav>ul{justify-content: center;} */
+        /* .logo{margin: 0 auto;} */
+        /* nav{text-align: center;
+              top: 110;} */
+              /* a.logo{width: 100vw;} */
+        header{text-align: center;}
+        nav{
+          text-align: center;
+          padding: 0 70px;
+        }
+        nav>ul{
+          width: 100%;
+        }
+        aside{
+          top: 148.4px;
+        }
+      }
+      @media screen and ( max-width:460px){
+          nav>ul{
+            display: none;
+        }
+
+      }
     </style>
   </head>
   <body>
     <div id="wrap">
       <header>
         <a class="logo" href="#home">
-          <img src="https://poiemaweb.com/img/logo.png" height="36px" />
+          <img src="https://poiemaweb.com/img/logo.png"  />
         </a>
         <nav>
           <ul class="nav-items">
@@ -107,6 +146,7 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
           </ul>
+          <!-- <img src="#58666e"> -->
         </nav>
       </header>
     </div>
