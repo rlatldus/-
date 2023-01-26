@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    section {
+      background-color: rgb(90, 195, 160);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      overflow: auto;
+      /* 세로로 넘치치 않는다 */
+      /* flex-wrap: wrap; */
+      /* 넘치면 가로 정렬로 */
+
+      /* .flex-item {
+        flex-grow: 양의 정수값;
+      } */
+      /* 동일한 속성값을 가지면 모두 동일한 너비 */
+
+      .flex-container {
+        justify-content: center;
+      }
+      /* 센터!! */
+    }
+    li {
+      background-color: rgb(76, 137, 178);
+      border-radius: 10px;
+      list-style: none;
+      text-align: center;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <section>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>5</li>
+        <li>5</li>
+        <li>5</li>
+        <li>5</li>
+      </ul>
+    </section>
+  </body>
+</html>
+<!-- 부모 요소의 display 속성에 flex -->
+<!-- 부모 요소가 inline 요소인 경우 inline-flex을 지정한다. -->
