@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 2px solid black;
+}
+aside {
+  top: 100px;
+  width: 12vw;
+  min-width: 120px;
+  padding: 30px;
+  height: 100vh;
+  overflow: hidden;
+  /* overflow: hidden; 이거 좋네요*/
+  border-right: 1px solid black;
+  float: left;
+}
+aside::after {
+  font-size: 0;
+}
+article {
+  width: 86vw;
+  font-size: 1rem;
+  float: left;
+  top: 100px;
+  padding: 30px;
+  border: 1px solid black;
+}
+video {
+  display: block;
+  object-fit: fill;
+  border: 1px solid rebeccapurple;
+  margin: 20px 0;
+}
+@media screen and (max-width: 840px) {
+  article {
+    width: calc(100vw-200px);
+  }
+}
